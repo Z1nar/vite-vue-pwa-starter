@@ -1,9 +1,11 @@
 import { clientsClaim } from 'workbox-core';
 import { ManifestEntry } from 'workbox-build';
-import { precacheAndRoute } from 'workbox-precaching';
+import { cleanupOutdatedCaches, precacheAndRoute } from 'workbox-precaching';
 
 // TypeScript aktivieren: Korrekten globalen Scope zuweisen.
 declare let self: ServiceWorkerGlobalScope;
+
+cleanupOutdatedCaches();
 
 // Dieser Teil wird für das Precaching benutzt und ist zwingend notwendig, also nicht einfach löschen.
 // Mehr zum Thema Precaching in der entsprechenden Vorlesung.

@@ -33,7 +33,7 @@ Diese Vorlage soll euch helfen, eine PWA mit Vue 3 und TypeScript in Vite zu ent
    ```
 **Führt die Produktionsversion der Anwendung lokal aus:**
    ```bash
-   npm run serve
+   npm run preview
    ```
 **Formatiert den gesamten Code gemäß den Prettier-Regeln in der _.prettierrc_ Datei:**
    ```bash
